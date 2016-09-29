@@ -17,7 +17,6 @@ if __name__ == '__main__':
         myInput = raw_input("Give me a string: ")
 
     for alphabet in myInput:
-        
         for i in range(5):
             output[i] += alphabet_dict[alphabet.lower()][i]
             output[i] += '0'
@@ -27,5 +26,5 @@ if __name__ == '__main__':
             if alphabet == '0':
                 sys.stdout.write(':white:')
             else:
-                sys.stdout.write(':gaon:')
+                sys.stdout.write(':hi:')
         sys.stdout.write('\n')
