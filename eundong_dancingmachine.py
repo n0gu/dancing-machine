@@ -7,7 +7,7 @@ alphabet_dict = {'a':ea.A, 'b':ea.B, 'c':ea.C, 'd':ea.D, 'e':ea.E,
                  'k':ea.K, 'l':ea.L, 'm':ea.M, 'n':ea.N, 'o':ea.O,
                  'p':ea.P, 'q':ea.Q, 'r':ea.R, 's':ea.S, 't':ea.T,
                  'u':ea.U, 'v':ea.V, 'w':ea.W, 'x':ea.X, 'y':ea.Y,
-                 'z':ea.Z, '+':ea.plus}
+                 'z':ea.Z, '+':ea.plus, ':':ea.colon, '.':ea.dot}
 output = ['','','','','']
 
 if __name__ == '__main__':
@@ -17,6 +17,7 @@ if __name__ == '__main__':
         myInput = raw_input("Give me a string: ")
 
     for alphabet in myInput:
+        
         for i in range(5):
             output[i] += alphabet_dict[alphabet.lower()][i]
             output[i] += '0'
@@ -26,5 +27,5 @@ if __name__ == '__main__':
             if alphabet == '0':
                 sys.stdout.write(':white:')
             else:
-                sys.stdout.write(':hi:')
+                sys.stdout.write(':gaon:')
         sys.stdout.write('\n')
